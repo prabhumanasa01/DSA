@@ -1,0 +1,237 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f6f8;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #263f73;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+
+    color: #e2e7f1;
+}
+
+
+/* Main */
+
+main {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+}
+
+
+/* Introduction */
+
+.intro {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid #ddd;
+}
+
+.intro h2 {
+    margin-bottom: 10px;
+
+    color: #263f73;
+}
+
+.intro p {
+    color: #555;
+}
+
+
+/* Levels */
+
+.level {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+}
+
+.level > h2 {
+    color: #263f73;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Topic */
+
+.topic {
+    margin-bottom: 20px;
+}
+
+.topic h3 {
+    font-size: 19px;
+
+    margin-bottom: 10px;
+
+    color: #333;
+}
+
+
+/* Subtopics */
+
+.subtopics {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.subtopics button {
+    background-color: #eef2f8;
+
+    border: 1px solid #cbd3e1;
+
+    color: #263f73;
+
+    padding: 10px 14px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: background-color 0.2s;
+}
+
+.subtopics button:hover {
+    background-color: #dce5f4;
+}
+
+
+/* Description */
+
+.description {
+    background-color: white;
+
+    border-left: 5px solid #263f73;
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+    border-radius: 5px;
+
+    min-height: 130px;
+
+    border-top: 1px solid #ddd;
+
+    border-right: 1px solid #ddd;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.description h2 {
+    color: #263f73;
+
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #555;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #263f73;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .level {
+        padding: 18px;
+    }
+
+    .subtopics {
+        flex-direction: column;
+    }
+
+    .subtopics button {
+        width: 100%;
+
+        text-align: left;
+    }
+
+    .description {
+        padding: 20px;
+    }
+}
+
